@@ -20,7 +20,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Api tests
-      run: mvn clean test -Pcrud-tests
+      run: mvn clean test -Pcrud-tests -q
            
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v4.6.2
